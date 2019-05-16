@@ -15,5 +15,9 @@ html {
   margin: 0;
 }
 
+.main-content{
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
 
 </style>
