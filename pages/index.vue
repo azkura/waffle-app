@@ -1,18 +1,66 @@
 <template>
   <section class="container">
-   
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil molestiae sunt quod cum voluptatum quos harum facilis culpa officiis velit, deserunt ipsam molestias officia, impedit asperiores quaerat debitis eius dolore.</p>
+    <div class="post">
+      <div>
+        <PostPreview 
+        v-for="post in posts"
+        :key="post.id"
+        :thumbnail="post.thumbnail"
+        :title="post.title"
+        :content="post.content"
+        :id="post.id"
+      />
+      </div>
+
+      
+    </div>
+    <div class="test-flex">
+      <test />
+      <test />
+    </div>
   </section>
 </template>
 
 <script>
 
+import PostPreview from '~/components/PostPreview/PostPreview'
+import test from '~/components/test'
+
 export default {
   components: {
-   
+    PostPreview,
+    test
+  },
+
+  data () {
+    return {
+       posts:[
+            {  
+              thumbnail: 'https://static.vecteezy.com/system/resources/previews/000/098/660/non_2x/vector-burger-truck.jpg',
+              title: 'mon posts',
+              content: 'here i try to learn using vue js from myself',
+              id: 'first-post'
+            },
+
+            {
+              title: 'my second post',
+              content: 'hello glad to post my second opinion in this blog',
+              thumbnail: 'https://static.vecteezy.com/system/resources/previews/000/098/660/non_2x/vector-burger-truck.jpg',
+              id: 'my second post'
+            }
+        ]
+    }
   }
 }
 </script>
 
 <style>
+
+.post, .test-flex {
+  display: flex;
+  flex-direction: row;
+  
+}
 
 </style>
