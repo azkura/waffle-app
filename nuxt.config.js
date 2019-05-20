@@ -7,11 +7,11 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: "waffle-blog",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: "my awesome waffle-nuxt-blog"}
     ],
     link: [
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,700' }

@@ -20,14 +20,14 @@ export default {
 
 
 <style>
-html {
-  font-family: 'Open Sans', sans-serif;
-  
-}
 
 * {
   box-sizing: border-box;
   margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .main-content{
