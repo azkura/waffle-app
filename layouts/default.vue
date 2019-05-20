@@ -1,7 +1,9 @@
 <template>
   <div>
     <TheHeader />
-    <nuxt />
+    <main class="main-content">
+       <nuxt />
+    </main>
     <TheFooter />
   </div>
 </template>
@@ -31,8 +33,8 @@ body {
 }
 
 .main-content{
-  margin-top: 5rem;
-  margin-bottom: 10rem;
+  margin-top: 4.5rem;
+  margin-bottom: 4.5rem;
 }
 
 </style>

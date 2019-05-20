@@ -1,5 +1,6 @@
 <template>
   <section class="container">
+    <div class="thumb"   :style="{backgroundImage: 'url(' + require('@/assets/brunch-cappuccino-coffee.jpg') + ')'}"></div>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil molestiae sunt quod cum voluptatum quos harum facilis culpa officiis velit, deserunt ipsam molestias officia, impedit asperiores quaerat debitis eius dolore.</p>
     <div class="post">
       <div>
@@ -56,6 +57,14 @@ export default {
 </script>
 
 <style>
+
+.thumb {
+    margin: 14px;
+    width: 100%;
+    height: 300px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .post, .test-flex {
   display: flex;
