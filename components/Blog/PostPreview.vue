@@ -43,20 +43,21 @@ export default {
 
 .post-preview {
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
-    margin: 1rem;
-    /*width: 40%; 
-    height: 30rem; */
-    text-align: center;
+    margin: auto;
+    width: 40%; 
+    height: 30rem; 
+    text-align: center; 
 }
-
 .post-preview-thumbnail {
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 15rem;
-
 }
-
+.post-preview-title,
+.post-preview-content {
+    padding: 1rem;
+}
 .read {
     width: 50%;
     height: 2rem;
@@ -66,11 +67,16 @@ export default {
     border: 1px solid black;   
     margin: 30px;
 }
-
- a {
+a {
     text-decoration: none;
-    color: white;
-    
+    color: white;  
+}
+
+@media (min-width: 35rem) {
+    .post-preview {
+        width: 25rem;
+        margin: 1rem;
+    }
 }
 
 </style>

@@ -1,8 +1,7 @@
 <template>
-  <section class="container">
+  <div>
     <div class="thumb"   :style="{backgroundImage: 'url(' + require('@/assets/brunch-cappuccino-coffee.jpg') + ')'}"></div>
-    <div>
-      <div class="post">
+    <section id="post">
         <PostPreview 
           v-for="post in posts"
           :key="post.id"
@@ -11,13 +10,12 @@
           :content="post.content"
           :id="post.id"
         />
+    </section>
+     <div class="test-flex">
+        <test />
+        <test />
       </div>
-    </div>
-    <div class="test-flex">
-      <test />
-      <test />
-    </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -63,9 +61,11 @@ export default {
     background-size: cover;
 }
 
-.post, .test-flex {
+#post, .test-flex {
+  padding-top: 2rem;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   
 }
 
