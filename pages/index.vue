@@ -1,20 +1,17 @@
 <template>
   <section class="container">
     <div class="thumb"   :style="{backgroundImage: 'url(' + require('@/assets/brunch-cappuccino-coffee.jpg') + ')'}"></div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil molestiae sunt quod cum voluptatum quos harum facilis culpa officiis velit, deserunt ipsam molestias officia, impedit asperiores quaerat debitis eius dolore.</p>
-    <div class="post">
-      <div>
+    <div>
+      <div class="post">
         <PostPreview 
-        v-for="post in posts"
-        :key="post.id"
-        :thumbnail="post.thumbnail"
-        :title="post.title"
-        :content="post.content"
-        :id="post.id"
-      />
+          v-for="post in posts"
+          :key="post.id"
+          :thumbnail="post.thumbnail"
+          :title="post.title"
+          :content="post.content"
+          :id="post.id"
+        />
       </div>
-
-      
     </div>
     <div class="test-flex">
       <test />
@@ -25,7 +22,7 @@
 
 <script>
 
-import PostPreview from '~/components/PostPreview/PostPreview'
+import PostPreview from '~/components/Blog/PostPreview'
 import test from '~/components/test'
 
 export default {

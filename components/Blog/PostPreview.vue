@@ -1,9 +1,8 @@
 <template>
-    <div class="post-preview">
+    <article class="post-preview">
         <div 
             class="post-preview-thumbnail"
-            :style="{ backgroundImage: 'url('+ thumbnail +')' }">
-        </div>
+            :style="{ backgroundImage: 'url('+ thumbnail +')' }"></div>
         <div class="post-preview-title">
             <h5>{{ title }}</h5>
         </div>
@@ -11,18 +10,30 @@
             <p>{{ content }}</p>
         </div>
         <div class="read">
-            <nuxt-link to="" class="read-more" ><a>read-more</a></nuxt-link>
+            <nuxt-link :to="id" class="read-more" ><a>read-more</a></nuxt-link>
         </div>
-    </div>
+    </article>
 </template>
 
 <script>
 export default {
     props : {
-        thumbnail: String,
-        title: String,
-        content: String,
-        id: String
+        thumbnail: {
+            type: String,
+            required: true
+        },
+        title: {
+            type: String,
+            required: true
+        },
+        content: {
+            type: String,
+            required: true
+        },
+        id: {
+            type: String,
+            required: true
+        }
     }
 }
 

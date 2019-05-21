@@ -28,7 +28,7 @@ export default {
     top: 0;
     left: 0;
     width: 100%;
-    height: 4.5rem;
+    height: 3rem;
 }
 .header-nav {
     height: 100%;
@@ -49,6 +49,9 @@ export default {
     margin: 1rem;
     padding: 0.3rem;
 }
+.nav-link.nuxt-link-exact-active {
+    border-bottom: 3px solid tomato;
+}
 .nav-link a {
     display: block;
     text-decoration: none;
@@ -58,9 +61,6 @@ export default {
 .nav-link a:active,
 .nav-link.nuxt-link-exact-active a {
     color: tomato;
-}
-.nav-link a:active {
-    border-bottom: 1px solid black;
 }
 
 </style>
