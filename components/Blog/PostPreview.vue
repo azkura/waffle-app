@@ -1,18 +1,20 @@
 <template>
     <article class="post-preview">
-        <div class="type-thema">{{ thema }}</div>
-        <div class="post-date">{{ postDate }}</div>
-        <div class="post-preview-title">
-            <h5><strong>{{ title }}</strong></h5>
-        </div>
-        <div 
-            class="post-preview-thumbnail"
-            :style="{ backgroundImage: 'url('+ thumbnail +')' }"></div>
-        <div class="post-preview-content">
-            <p>{{ content }}</p>
-             <span class="read">
-                <nuxt-link :to="id" class="read-more" ><a><strong>Read-More...</strong></a></nuxt-link>
-            </span>
+        <div class="main-post-preview">
+            <div class="type-thema">{{ thema }}</div>
+            <div class="post-date">{{ postDate }}</div>
+            <div class="post-preview-title">
+                <h5><strong>{{ title }}</strong></h5>
+            </div>
+            <div 
+                class="post-preview-thumbnail"
+                :style="{ backgroundImage: 'url('+ thumbnail +')' }"></div>
+            <div class="post-preview-content">
+                <p>{{ content }}</p>
+                <div class="read">
+                    <nuxt-link :to="id" class="read-more"><a><strong>Read-More...</strong></a></nuxt-link>
+                </div>
+            </div>
         </div>
     </article>
 </template>
@@ -51,25 +53,26 @@ export default {
 </script>
 
 <style scoped>
+.post-preview {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin: 1rem;
+    padding: 18px;
+    background: ghostwhite;
+}
+.main-post-preview {
+    background: white;
+}
 .type-thema {
     border-bottom: 2px solid gray;
     text-transform: uppercase;
 }
 .post-date {
     display: block;
-    background: red;
+    background: lightblue;
     color: white;
     width: 40%;
     text-align: center; 
     margin-top: 8px;
-}
-.post-preview {
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
-    margin: 1rem;
-    padding: 18px;
-   /* width: 40%; */
-    /*height: 30rem; */
-    /*text-align: center; */
 }
 .post-preview-thumbnail {
     background-position: center;
@@ -80,6 +83,9 @@ export default {
 .post-preview-title,
 .post-preview-content {
     padding: 1rem;
+}
+.post-preview-content p {
+    color: darkgray;
 }
 a {
     text-decoration: none;

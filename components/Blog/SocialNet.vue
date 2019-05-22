@@ -1,12 +1,14 @@
 <template>
     <div class="social-content">
-        <p><strong>Follow Us</strong></p> <hr>
-        <ul class="social-list">
-            <nuxt-link to="/" tag="li" class="social-link"><a class="fa"><font-awesome-icon :icon="['fab', 'facebook-f']"/></a></nuxt-link>
-            <nuxt-link to="/" tag="li" class="social-link"><a class="fa"><font-awesome-icon :icon="['fab', 'instagram']"/></a></nuxt-link>
-            <nuxt-link to="/" tag="li" class="social-link"><a class="fa"><font-awesome-icon :icon="['fab', 'twitter']"/></a></nuxt-link>
-            <nuxt-link to="/" tag="li" class="social-link"><a class="fa"><font-awesome-icon :icon="['fab', 'pinterest-p']"/></a></nuxt-link>
-        </ul>
+        <div class="main-social-content">
+            <p><strong>Follow Us</strong></p> <hr>
+            <ul class="social-list">
+                <nuxt-link to="/" tag="li" class="social-link"><a class="fa"><font-awesome-icon :icon="['fab', 'facebook-f']"/></a></nuxt-link>
+                <nuxt-link to="/" tag="li" class="social-link"><a class="fa"><font-awesome-icon :icon="['fab', 'instagram']"/></a></nuxt-link>
+                <nuxt-link to="/" tag="li" class="social-link"><a class="fa"><font-awesome-icon :icon="['fab', 'twitter']"/></a></nuxt-link>
+                <nuxt-link to="/" tag="li" class="social-link"><a class="fa"><font-awesome-icon :icon="['fab', 'pinterest-p']"/></a></nuxt-link>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -18,10 +20,14 @@ export default {
 
 <style>
 .social-content {
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
-    width: 20%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    width: 30%;
     height: 8rem;
     padding: 14px;
+    background: ghostwhite;
+}
+.main-social-content {
+    background: white;
 }
 .social-list {
     display: flex;

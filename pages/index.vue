@@ -17,12 +17,17 @@
         <test />
       </div>
       <div>
+
         <SocialNet />
+
+        <MostPopular />
       </div>
   </div>
 </template>
 
 <script>
+
+import MostPopular from '~/components/Blog/MostPopular'
 import SocialNet from '~/components/Blog/SocialNet'
 import PostPreview from '~/components/Blog/PostPreview'
 import test from '~/components/test'
@@ -31,7 +36,8 @@ export default {
   components: {
     PostPreview,
     test,
-    SocialNet
+    SocialNet,
+    MostPopular
   },
 
   data () {
@@ -58,7 +64,7 @@ export default {
               title: 'my second post',
               content: 'hello glad to post my second opinion in this blog',
               thumbnail: 'https://static.vecteezy.com/system/resources/previews/000/098/660/non_2x/vector-burger-truck.jpg',
-              id: 'my second post'
+              id: 'my third post'
             }
         ]
     }
@@ -67,11 +73,10 @@ export default {
 </script>
 
 <style>
-.grid-container {
+ /*.grid-container {
   display: grid;
- /* grid-template-areas: */
-
-}
+ grid-template-areas: 
+}*/
 .thumb {
     margin: 14px;
     width: 100%;
