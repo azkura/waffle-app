@@ -4,7 +4,7 @@
             <div class="type-thema">{{ thema }}</div>
             <div class="post-date">{{ postDate }}</div>
             <div class="post-preview-title">
-                <h5><strong>{{ title }}</strong></h5>
+                <h5>{{ title }}</h5>
             </div>
             <div 
                 class="post-preview-thumbnail"
@@ -12,7 +12,7 @@
             <div class="post-preview-content">
                 <p>{{ content }}</p>
                 <div class="read">
-                    <nuxt-link :to="id" class="read-more"><a><strong>Read-More...</strong></a></nuxt-link>
+                    <nuxt-link :to="id" class="read-more"><a>Read-More...</a></nuxt-link>
                 </div>
             </div>
         </div>
@@ -90,6 +90,9 @@ export default {
 a {
     text-decoration: none;
     color: black;  
+}
+h5, a {
+    font-weight: bold;
 }
 @media (min-width: 35rem) {
     .post-preview {

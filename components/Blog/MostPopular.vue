@@ -1,13 +1,15 @@
 <template>
     <div class="most-popular">
-        <p><strong>Most Popular</strong></p>
-        <Popular
-            v-for="pop in pops"
-            :key="pop.id"
-            :ThumbImg="pop.thumbnailUrl"
-            :excerpt="pop.greatTitle"
-            :id="pop.id"
-        /> 
+        <div class="most-popular-main">
+            <p>Most Popular</p> <hr>
+            <Popular
+                v-for="pop in pops"
+                :key="pop.id"
+                :ThumbImg="pop.thumbnailUrl"
+                :excerpt="pop.greatTitle"
+                :id="pop.id"
+            /> 
+        </div>
     </div>
 </template>
 
@@ -39,7 +41,20 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.most-popular {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    width: 40%;
+    padding: 10px;
+    margin: 3rem;
+    background: ghostwhite;
+}
+.most-popular-main {
+    background: white;
+}
+.most-popular-main p {
+    font-weight: bold;
+}
 
 </style>
 

@@ -28,18 +28,29 @@ export default {
 }
 </script>
 
-<style>
+<style scoped> 
 .popular-content {
-    border: 1px solid gray;
-    width: 30%;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+   /* width: 30%; */
     margin: 1rem;
     border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
 }
 .popular-thumbnail {
     background-position: center;
     background-size: cover;
-    height: 10rem;
+    height: 5rem;
     width: 100%;
+}
+.Most-popular-content {
+    margin: 0.6rem;
+}
+.Most-popular-content p {
+    font-weight: bold;
 }
 </style>
 

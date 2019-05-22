@@ -1,7 +1,7 @@
 <template>
     <div class="social-content">
         <div class="main-social-content">
-            <p><strong>Follow Us</strong></p> <hr>
+            <p>Follow Us</p> <hr>
             <ul class="social-list">
                 <nuxt-link to="/" tag="li" class="social-link"><a class="fa"><font-awesome-icon :icon="['fab', 'facebook-f']"/></a></nuxt-link>
                 <nuxt-link to="/" tag="li" class="social-link"><a class="fa"><font-awesome-icon :icon="['fab', 'instagram']"/></a></nuxt-link>
@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .social-content {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     width: 30%;
@@ -29,10 +29,13 @@ export default {
 .main-social-content {
     background: white;
 }
+.main-social-content p {
+    font-weight: bold;
+}
 .social-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .social-link {
