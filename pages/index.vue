@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="grid-container">
     <div class="thumb"   :style="{backgroundImage: 'url(' + require('@/assets/brunch-cappuccino-coffee.jpg') + ')'}"></div>
     <section id="post">
         <PostPreview 
@@ -16,18 +16,22 @@
         <test />
         <test />
       </div>
+      <div>
+        <SocialNet />
+      </div>
   </div>
 </template>
 
 <script>
-
+import SocialNet from '~/components/Blog/SocialNet'
 import PostPreview from '~/components/Blog/PostPreview'
 import test from '~/components/test'
 
 export default {
   components: {
     PostPreview,
-    test
+    test,
+    SocialNet
   },
 
   data () {
@@ -63,7 +67,11 @@ export default {
 </script>
 
 <style>
+.grid-container {
+  display: grid;
+ /* grid-template-areas: */
 
+}
 .thumb {
     margin: 14px;
     width: 100%;
