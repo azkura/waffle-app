@@ -2,10 +2,10 @@
     <div class="social-content">
         <p><strong>Follow Us</strong></p> <hr>
         <ul class="social-list">
-            <nuxt-link to="/" tag="li" class="social-link"><a class="fa"><font-awesome-icon :icon="['fab', 'linkedin']"/></a></nuxt-link>
-            <nuxt-link to="/" tag="li" class="social-link"><a class="fa"><font-awesome-icon :icon="['fab', 'github']"/></a></nuxt-link>
-            <nuxt-link to="/" tag="li" class="social-link"><a class="fa"><font-awesome-icon :icon="['fab', 'facebook']"/></a></nuxt-link>
-            <nuxt-link to="/" tag="li" class="social-link"><a class="fa"><font-awesome-icon :icon="['fas', 'coffee']"/></a></nuxt-link>
+            <nuxt-link to="/" tag="li" class="social-link"><a class="fa"><font-awesome-icon :icon="['fab', 'facebook-f']"/></a></nuxt-link>
+            <nuxt-link to="/" tag="li" class="social-link"><a class="fa"><font-awesome-icon :icon="['fab', 'instagram']"/></a></nuxt-link>
+            <nuxt-link to="/" tag="li" class="social-link"><a class="fa"><font-awesome-icon :icon="['fab', 'twitter']"/></a></nuxt-link>
+            <nuxt-link to="/" tag="li" class="social-link"><a class="fa"><font-awesome-icon :icon="['fab', 'pinterest-p']"/></a></nuxt-link>
         </ul>
     </div>
 </template>
@@ -33,10 +33,14 @@ export default {
     list-style: none;
 }
 .fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
     text-decoration: none;
-    color: white;
+    border-radius: 50%;
+    color: black;
 }
-
 </style>
 
 
