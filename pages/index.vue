@@ -5,6 +5,7 @@
         <PostPreview 
           v-for="post in posts"
           :key="post.id"
+          :thema="post.categorie"
           :thumbnail="post.thumbnail"
           :title="post.title"
           :content="post.content"
@@ -32,7 +33,8 @@ export default {
   data () {
     return {
        posts:[
-            {  
+            { 
+              categorie: 'waffle',
               thumbnail: 'https://static.vecteezy.com/system/resources/previews/000/098/660/non_2x/vector-burger-truck.jpg',
               title: 'mon posts',
               content: 'here i try to learn using vue js from myself',
@@ -40,6 +42,15 @@ export default {
             },
 
             {
+              categorie: 'dessert',
+              title: 'my second post',
+              content: 'hello glad to post my second opinion in this blog',
+              thumbnail: 'https://static.vecteezy.com/system/resources/previews/000/098/660/non_2x/vector-burger-truck.jpg',
+              id: 'my second post'
+            },
+
+            {
+              categorie: 'drinks',
               title: 'my second post',
               content: 'hello glad to post my second opinion in this blog',
               thumbnail: 'https://static.vecteezy.com/system/resources/previews/000/098/660/non_2x/vector-burger-truck.jpg',
@@ -60,13 +71,17 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 #post, .test-flex {
   padding-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  flex-direction: column;
+}
+@media (min-width: 35rem) {
+  #post {
+    flex-direction: row;
+  }
 }
 
 </style>
