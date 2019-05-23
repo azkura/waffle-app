@@ -1,27 +1,21 @@
 <template>
   <div class="grid-container">
-    <div class="thumb"   :style="{backgroundImage: 'url(' + require('@/assets/brunch-cappuccino-coffee.jpg') + ')'}"></div>
-    <section id="post">
-        <PostPreview 
-          v-for="post in posts"
-          :key="post.id"
-          :thema="post.categorie"
-          :thumbnail="post.thumbnail"
-          :title="post.title"
-          :content="post.content"
-          :id="post.id"
-        />
-    </section>
-     <div class="test-flex">
-        <test />
-        <test />
+    <div class="thumb-nail">
+      <div class="thumb"
+        :style="{ backgroundImage: 'url(' + require('@/assets/brunch-cappuccino-coffee.jpg') + ')'}"
+      >
       </div>
-      <div>
-
-        <SocialNet />
-
-        <MostPopular />
-      </div>
+    </div>
+    <div class="post-preview">PostPreview</div>
+    <div class="search">search</div>
+    <div class="social">focial</div>
+    <div class="most-popular">MostPopular</div>
+    <div class="other">some text here</div>
+    
+    
+    
+      
+      
   </div>
 </template>
 
@@ -30,12 +24,10 @@
 import MostPopular from '~/components/Blog/MostPopular'
 import SocialNet from '~/components/Blog/SocialNet'
 import PostPreview from '~/components/Blog/PostPreview'
-import test from '~/components/test'
 
 export default {
   components: {
     PostPreview,
-    test,
     SocialNet,
     MostPopular
   },
@@ -73,10 +65,60 @@ export default {
 </script>
 
 <style>
- /*.grid-container {
+.grid-container {
+  height: 100%;
   display: grid;
- grid-template-areas: 
-}*/
+  grid-gap: 3px;
+  grid-template-columns: repeat(auto-fit, minmax(auto, auto));
+  grid-auto-rows: auto;
+  grid-template-areas: 
+  "i i i i i i i i i i i i"
+  "p p p p p p p p s s s s"
+  "p p p p p p p p f f f f"
+  "t t t t t t t t m m m m"
+}
+.thumb-nail{
+ /* background-color: brown; */
+  grid-area: i;
+}
+.post-preview {
+  background-color: blue;
+  grid-area: p;
+}
+.search {
+  background-color: chartreuse;
+  grid-area: s;
+}
+.social {
+  background-color: coral;
+  grid-area: f;
+}
+.most-popular {
+  background-color: darkcyan; 
+  grid-area: m;
+}
+.other {
+  background-color: darkgreen;
+  grid-area: t;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .thumb {
     margin: 14px;
     width: 100%;

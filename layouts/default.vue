@@ -30,6 +30,7 @@ export default {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background: rgb(235, 232, 232);
 }
 
 .main-content{
