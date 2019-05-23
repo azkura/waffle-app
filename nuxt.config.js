@@ -14,7 +14,8 @@ export default {
       { hid: 'description', name: 'description', content: "my awesome waffle-nuxt-blog"}
     ],
     link: [
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,700' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,700' },
+      { href="https://fonts.googleapis.com/css?family=Lobster&display=swap",rel="stylesheet"}
     ]
   },
 

@@ -2,8 +2,8 @@
   <div class="grid-container">
     <div class="thumb-nail">
       <div class="thumb"
-        :style="{ backgroundImage: 'url(' + require('@/assets/brunch-cappuccino-coffee.jpg') + ')'}"
-      >
+        :style="{ backgroundImage: 'url(' + require('@/assets/coffee.jpg') + ')'}"
+      > vertu taste and many more.......
       </div>
     </div>
     <div class="post-preview">
@@ -45,7 +45,7 @@ export default {
   components: {
     PostPreview,
     SocialNet,
-    MostPopular
+    MostPopular,
   },
 
   data () {
@@ -118,6 +118,9 @@ export default {
     height: 300px; 
     background-repeat: no-repeat;
     background-size: cover;
+    text-align:left;
+    font-size: 2rem;
+    color: white;
 }
 #post {
   display: flex;

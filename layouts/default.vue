@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Logo />
     <TheHeader />
     <main class="main-content">
        <nuxt />
@@ -11,11 +12,14 @@
 <script>
 import TheHeader from '~/components/TheHeader/TheHeader'
 import TheFooter from '~/components/TheFooter/TheFooter'
+import Logo from '~/components/TheHeader/Logo'
+
 
 export default {
   components: {
     TheHeader,
-    TheFooter
+    TheFooter,
+    Logo
   }
 }
 </script>
