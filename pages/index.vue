@@ -23,9 +23,7 @@
       <div class="social"> 
         <SocialNet />
       </div>
-    </div>
-    <div class="social">
-      <div class="social"> 
+      <div class="social">
         <SocialNet />
       </div>
     </div>
@@ -33,13 +31,7 @@
       <div class="most">
         <MostPopular />
       </div>
-    </div>
-    <div class="other">some text here</div>
-    
-    
-    
-      
-      
+    </div>  
   </div>
 </template>
 
@@ -92,66 +84,42 @@ export default {
 .grid-container {
   height: 100%;
   display: grid;
-  grid-gap: 3px;
+  grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(auto, auto));
   grid-auto-rows: auto;
   grid-template-areas: 
-  "i i i i i i i i i i i i"
-  "p p p p p p p p p p s s"
-  "p p p p p p p p p p f f"
-  "p p p p p p p p p p m m"
+  ". . . i i i i i i . . ."
+  ". . . p p p p p s . . ."
+  ". . . p p p p p m . . ."
+  ". . . p p p p p m . . ."
 }
 .thumb-nail{
- /* background-color: brown; */
   grid-area: i;
+  padding: 15px;
+  border-bottom: 3px solid darkgray;
 }
 .post-preview {
-  /*background-color: blue; */
   grid-area: p;
+  
+
 }
 .search {
- /* background-color: chartreuse; */
   grid-area: s;
 }
 .social {
- /* background-color: coral; */
   grid-area: f;
+  margin: 5px;
 }
 .most-popular {
-  /*background-color: darkcyan; */
   grid-area: m;
 }
-.other {
-  background-color: darkgreen;
-  grid-area: t;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .thumb {
-    margin: 14px;
     width: 100%;
     height: 300px; 
     background-repeat: no-repeat;
     background-size: cover;
 }
-#post, .test-flex {
-  padding-top: 2rem;
+#post {
   display: flex;
   justify-content: center;
   align-items: center;
