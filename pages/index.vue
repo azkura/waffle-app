@@ -6,10 +6,34 @@
       >
       </div>
     </div>
-    <div class="post-preview">PostPreview</div>
-    <div class="search">search</div>
-    <div class="social">focial</div>
-    <div class="most-popular">MostPopular</div>
+    <div class="post-preview">
+      <div id="post">
+          <PostPreview 
+            v-for="post in posts"
+            :key="post.id"
+            :thema="post.categorie"
+            :thumbnail="post.thumbnail"
+            :title="post.title"
+            :content="post.content"
+            :id="post.id"
+          />
+      </div>
+    </div>
+    <div class="search">
+      <div class="social"> 
+        <SocialNet />
+      </div>
+    </div>
+    <div class="social">
+      <div class="social"> 
+        <SocialNet />
+      </div>
+    </div>
+    <div class="most-popular">
+      <div class="most">
+        <MostPopular />
+      </div>
+    </div>
     <div class="other">some text here</div>
     
     
@@ -37,7 +61,7 @@ export default {
        posts:[
             { 
               categorie: 'waffle',
-              thumbnail: 'https://static.vecteezy.com/system/resources/previews/000/098/660/non_2x/vector-burger-truck.jpg',
+              thumbnail: 'https://cdn.citynomads.com/wp-content/uploads/2017/07/10230422/alati-cover.png',
               title: 'mon posts',
               content: 'here i try to learn using vue js from myself',
               id: 'first-post'
@@ -47,7 +71,7 @@ export default {
               categorie: 'dessert',
               title: 'my second post',
               content: 'hello glad to post my second opinion in this blog',
-              thumbnail: 'https://static.vecteezy.com/system/resources/previews/000/098/660/non_2x/vector-burger-truck.jpg',
+              thumbnail: 'https://media.timeout.com/images/103817472/image.jpg',
               id: 'my second post'
             },
 
@@ -55,7 +79,7 @@ export default {
               categorie: 'drinks',
               title: 'my second post',
               content: 'hello glad to post my second opinion in this blog',
-              thumbnail: 'https://static.vecteezy.com/system/resources/previews/000/098/660/non_2x/vector-burger-truck.jpg',
+              thumbnail: 'https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/reference_guide/12_superfoods_for_new_moms_ref_guide/650x350_12_superfoods_for_new_moms_ref_guide.jpg',
               id: 'my third post'
             }
         ]
@@ -73,28 +97,28 @@ export default {
   grid-auto-rows: auto;
   grid-template-areas: 
   "i i i i i i i i i i i i"
-  "p p p p p p p p s s s s"
-  "p p p p p p p p f f f f"
-  "t t t t t t t t m m m m"
+  "p p p p p p p p p p s s"
+  "p p p p p p p p p p f f"
+  "p p p p p p p p p p m m"
 }
 .thumb-nail{
  /* background-color: brown; */
   grid-area: i;
 }
 .post-preview {
-  background-color: blue;
+  /*background-color: blue; */
   grid-area: p;
 }
 .search {
-  background-color: chartreuse;
+ /* background-color: chartreuse; */
   grid-area: s;
 }
 .social {
-  background-color: coral;
+ /* background-color: coral; */
   grid-area: f;
 }
 .most-popular {
-  background-color: darkcyan; 
+  /*background-color: darkcyan; */
   grid-area: m;
 }
 .other {

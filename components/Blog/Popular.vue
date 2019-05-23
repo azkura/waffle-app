@@ -31,7 +31,7 @@ export default {
 <style scoped> 
 .popular-content {
    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-   /* width: 30%; */
+    width: 100%;
     margin: 1rem;
     border-radius: 3px;
     display: flex;

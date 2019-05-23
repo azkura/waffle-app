@@ -21,7 +21,7 @@ export default {
 <style scoped>
 .social-content {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    width: 30%;
+    width: 100%;
     height: 8rem;
     padding: 14px;
     background: ghostwhite;
