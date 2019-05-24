@@ -1,10 +1,11 @@
 <template>
   <div class="grid-container">
     <div class="thumb-nail">
-      <div class="thumb"
+      <Carousel />
+     <!-- <div class="thumb"
         :style="{ backgroundImage: 'url(' + require('@/assets/coffee.jpg') + ')'}"
-      > vertu taste and many more.......
-      </div>
+      > <div class="feature">vertu taste and many more.......</div>
+      </div> -->
     </div>
     <div class="post-preview">
       <div id="post">
@@ -40,12 +41,14 @@
 import MostPopular from '~/components/Blog/MostPopular'
 import SocialNet from '~/components/Blog/SocialNet'
 import PostPreview from '~/components/Blog/PostPreview'
+import Carousel from '~/components/Blog/Carousel'
 
 export default {
   components: {
     PostPreview,
     SocialNet,
     MostPopular,
+    Carousel
   },
 
   data () {
@@ -120,18 +123,23 @@ export default {
     background-size: cover;
     text-align:left;
     font-size: 2rem;
+    font-family: 'Lobster', cursive;
+    font-style: italic;
     color: white;
+}
+.feature {
+  padding: 40px;
 }
 #post {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
 }
-@media (min-width: 35rem) {
+/*@media (min-width: 35rem) {
   #post {
     flex-direction: row;
   }
-}
+}*/
 
 </style>

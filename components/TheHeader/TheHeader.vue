@@ -4,11 +4,11 @@
             <ul class="nav-links">
                 <nuxt-link tag="li" to="/"  class="nav-link"><a>Home</a></nuxt-link>
                 <nuxt-link tag="li" to="about/" class="nav-link"><a>About Us</a></nuxt-link>
-                <nuxt-link tag="li" to="/"  class="nav-link"><a>Our Creations</a></nuxt-link>
+                <nuxt-link tag="li" to="/videos"  class="nav-link"><a>Videos</a></nuxt-link>
                 <nuxt-link tag="li" to="/"  class="nav-link"><a>Blog</a></nuxt-link>
                 <nuxt-link tag="li" to="/"  class="nav-link"><a>Where to buy</a></nuxt-link>
                 <nuxt-link tag="li" to="/"  class="nav-link"><a>Shop Online</a></nuxt-link>
-                <nuxt-link tag="li" to="/"  class="nav-link"><a>FAQ</a></nuxt-link>
+                <nuxt-link tag="li" to="/connexion"  class="nav-link"><a>Login</a></nuxt-link>
                 <nuxt-link tag="li" to="/"  class="nav-link"><a>Contact Us</a></nuxt-link>
             </ul>  
         </nav>
@@ -46,21 +46,23 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    /*font-family: 'Pacifico', cursive; */
+     font-family: 'Lobster', cursive;
     margin: 1rem;
     padding: 0.3rem;
 }
 .nav-link.nuxt-link-exact-active {
-    border-bottom: 3px solid tomato;
+    border-bottom: 3px solid rgb(9, 59, 57);
 }
 .nav-link a {
     display: block;
     text-decoration: none;
-    color: black;
+    color: goldenrod;
 }
 .nav-link a:hover,
 .nav-link a:active,
 .nav-link.nuxt-link-exact-active a {
-    color: tomato;
+    color: rgb(9, 59, 57);
 }
 
 </style>

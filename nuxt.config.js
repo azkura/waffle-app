@@ -15,7 +15,7 @@ export default {
     ],
     link: [
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,700' },
-      { href="https://fonts.googleapis.com/css?family=Lobster&display=swap",rel="stylesheet"}
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lobster|Pacifico&display=swap'}
     ]
   },
 

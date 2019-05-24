@@ -4,7 +4,7 @@
     :style="{ backgroundImage: 'url(' + require('@/assets/country-crop.jpg') + ')'}">
     <img 
         class="img-logo"
-        src="@/assets/companyLogo.jpg" alt="logo"
+        src="@/assets/companyLogo.png" alt="logo"
     />
     </div>
 </template>
