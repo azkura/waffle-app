@@ -40,7 +40,7 @@
 
 <style>
 .some-videos {
-    background-color: rgb(9, 80, 41);
+    background-color: rgb(9, 59, 57);
 }
 
 </style>

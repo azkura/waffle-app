@@ -139,7 +139,7 @@
 }
 
 .Copyright {
-    background-color: rgb(9, 66, 47)
+    background-color: rgb(9, 66, 47);
 }
 
 </style>
